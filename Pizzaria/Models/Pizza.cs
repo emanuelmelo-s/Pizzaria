@@ -7,6 +7,8 @@ namespace Pizzaria.Models
 {
     public class Pizza : IEntidade
     {
+        /*https://pizzariaatividade.azurewebsites.net*/
+
         public int Id { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime DataAlteracao { get; set; }
