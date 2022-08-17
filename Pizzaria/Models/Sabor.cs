@@ -5,8 +5,15 @@ using System.Threading.Tasks;
 
 namespace Pizzaria.Models
 {
-    public class Sabor : IEntidade
+    public abstract class Sabor : IEntidade
     {
+        public Sabor(string nome, string fotoURL)
+        {
+            Nome = nome;
+            FotoURL = fotoURL;
+        }
+
+
         public int Id { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime DataAlteracao { get; set; }

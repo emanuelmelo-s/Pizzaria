@@ -9,6 +9,13 @@ namespace Pizzaria.Models
     {
         /*https://pizzariaatividade.azurewebsites.net*/
 
+        public Pizza(string nome, decimal preco, string fotoURL)
+        {
+            Nome = nome;
+            Preco = preco;
+            FotoURL = fotoURL;
+        }
+
         public int Id { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime DataAlteracao { get; set; }
